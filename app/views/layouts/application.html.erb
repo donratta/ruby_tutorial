@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyFirstApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    Header
+  </div>
+</div>
+
+<div class="navigation">
+  <div class="container">
+    Navigation
+  </div>
+</div>
+
+<div class="middler">
+  <div class="container">
+    <%= yield %>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    Footer
+  </div>
+</div>
+
+
+</body>
+</html>
